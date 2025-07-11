@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Craft Creator | Photographer & Creator</title>
+  <meta name="description" content="Portfolio of Anuj Gurav: Artistic Photography, Digital Creations, and Services across Portraits, Reels ,Craft creator, and more .">
+  <meta name="keywords" content="Anuj Gurav, Photographer, Freelance, Mumbai, Portfolio, Portrait, Maternity, Creative Photography,Craft creator">
+  <meta name="author" content="Anuj Gurav">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+    }
+    .velvet {
+      color: #d72638;
+    }
+    .btn-outline {
+      border: 2px solid #d72638;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    .btn-outline:hover {
+      background-color: #d72638;
+      color: white;
+    }
+    .nav-link:hover {
+      color: #d72638;
+    }
+    .scrollbar-thin::-webkit-scrollbar {
+      height: 8px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: #555;
+      border-radius: 8px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fadeInUp {
+      animation: fadeInUp 1s ease forwards;
+    }
+    .fadeInDelay-1 { animation-delay: 0.2s; }
+    .fadeInDelay-2 { animation-delay: 0.4s; }
+    .fadeInDelay-3 { animation-delay: 0.6s; }
+    .fadeInDelay-4 { animation-delay: 0.8s; }
+
+  </style>
+</head><body class="bg-black text-white scroll-smooth">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-black bg-opacity-80 backdrop-blur-md z-50 shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="text-2xl font-bold velvet tracking-wider">CRAFT CREATOR</div>
+
+      <!-- Desktop Links -->
+      <ul class="hidden md:flex space-x-8 text-sm uppercase font-medium">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger Icon for Mobile -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="menu" class="hidden md:hidden bg-black bg-opacity-95 backdrop-blur-md px-6 pb-6 transition-all duration-300 ease-in-out">
+      <ul class="flex flex-col space-y-4 text-sm uppercase font-medium text-center">
+        <li><a href="#home" class="nav-link block py-2">Home</a></li>
+        <li><a href="#services" class="nav-link block py-2">Services</a></li>
+        <li><a href="#projects" class="nav-link block py-2">Projects</a></li>
+        <li><a href="#about" class="nav-link block py-2">About</a></li>
+        <li><a href="#contact" class="nav-link block py-2">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url('images/keyboard-bg.jpg');">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/50"></div>
+    <div class="relative z-10 text-center px-6 animate-fadeInUp">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">Hello,</h1>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mt-2">My Name is <span class="velvet">Anuj Gurav</span></h1>
+      <p class="mt-6 text-gray-300 text-lg max-w-xl mx-auto leading-relaxed">I’m not just a photographer — I capture art, emotion, and timeless memories. Explore my world of visual storytelling.</p>
+      <a href="#projects" class="inline-block mt-8 px-8 py-3 btn-outline rounded-full text-lg">VIEW PORTFOLIO</a>
+    </div>
+  </section>
+
+  <style>
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeInUp {
+      animation: fadeInUp 1.5s ease-out forwards;
+    }
+  </style>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    document.querySelectorAll("#menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.add("hidden");
+      });
+    });
+  </script><!-- Services Section -->
+<section id="services" class="relative min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black py-24 px-6 text-white overflow-hidden">
+  <!-- Decorative Photo BG -->
+  <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-10" style="background-image: url('images/service.jpg');"></div>
+  <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-6xl mx-auto text-center animate-fadeInUp">
+    <h2 class="text-4xl md:text-5xl font-serif velvet mb-8 tracking-wide">~ SERVICES ~</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
+      Every image we create is a reflection of emotion, timing, and artistic precision. Whether you're seeking timeless portraits, joyful family moments, or cinematic maternity sessions — we’ve got you covered with style.
+    </p>
+
+    <!-- Quote to fill space -->
+    <div class="mt-12 italic text-gray-400 text-lg">
+      “Photography is the story I fail to put into words.” – Destin Sparks
+    </div>
+
+    <!-- Service Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20">
+      <!-- Portrait Sessions -->
+      <div class="p-6 bg-zinc-900 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+        <img src="images/project1.jpeg" alt="Portrait" class="mx-auto h-16 mb-4" />
+        <h3 class="text-2xl font-serif text-red-400 mb-3">Portrait Sessions</h3>
+        <p class="text-sm text-gray-300">Capture your essence with personal, styled shoots that speak volumes without words.</p>
+      </div>
+
+      <!-- Reels -->
+      <div class="p-6 bg-zinc-900 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+        <img src="images/instagram/1.jpeg" alt="Maternity" class="mx-auto h-16 mb-4" />
+        <h3 class="text-2xl font-serif text-red-400 mb-3">videographic Moments</h3>
+        <p class="text-sm text-gray-300">Timeless special visuals that capture life’s most magical chapters.</p>
+      </div>
+
+      <!-- Family Sessions -->
+      <div class="p-6 bg-zinc-900 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+        <img src="images/instagram/7.jpeg" alt="Family" class="mx-auto h-16 mb-4" />
+        <h3 class="text-2xl font-serif text-red-400 mb-3">Family Stories</h3>
+        <p class="text-sm text-gray-300">Authentic candid moments crafted into everlasting memories with your loved ones.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 1.5s ease-out;
+  }
+</style>
+
+<!-- Projects & Instagram Combined Section -->
+<section id="projects" class="py-20 px-6 bg-black text-white">
+  <div class="max-w-7xl mx-auto">
+    <!-- Projects Heading -->
+    <h2 class="text-4xl font-bold text-red-400 text-center mb-12 animate-fadeInUp">Projects</h2>
+
+    <!-- Project Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <a href="projects.html#product">
+  <article class="bg-zinc-900 bg-opacity-60 rounded-3xl overflow-hidden shadow-xl hover:shadow-red-500/30 transform hover:scale-105 transition duration-500 ease-in-out animate-fadeInUp">
+    <div class="h-64 w-full overflow-hidden rounded-t-3xl">
+      <img src="images/project1.jpeg" alt="Product Photoshoot" class="w-full h-full object-cover" />
+    </div>
+    <div class="p-4 text-center">
+      <h3 class="text-lg font-semibold bg-black bg-opacity-10 rounded px-3 py-1 inline-block">Product Photoshoot</h3>
+    </div>
+  </article>
+</a>
+
+     <a href="projects.html#motion">
+  <article class="bg-zinc-900 bg-opacity-60 rounded-3xl overflow-hidden shadow-xl hover:shadow-red-500/30 transform hover:scale-105 transition duration-500 ease-in-out animate-fadeInUp">
+    <div class="h-64 w-full overflow-hidden rounded-t-3xl">
+      <img src="images/project2.jpeg" alt="Product Photoshoot" class="w-full h-full object-cover" />
+    </div>
+    <div class="p-4 text-center">
+      <h3 class="text-lg font-semibold bg-black bg-opacity-10 rounded px-3 py-1 inline-block">Motion Potrait</h3>
+    </div>
+  </article>
+</a>
+
+
+      <a href="projects.html#urban">
+  <article class="bg-zinc-900 bg-opacity-60 rounded-3xl overflow-hidden shadow-xl hover:shadow-red-500/30 transform hover:scale-105 transition duration-500 ease-in-out animate-fadeInUp">
+    <div class="h-64 w-full overflow-hidden rounded-t-3xl">
+      <img src="images/project3.jpeg" alt="Product Photoshoot" class="w-full h-full object-cover" />
+    </div>
+    <div class="p-4 text-center">
+      <h3 class="text-lg font-semibold bg-black bg-opacity-10 rounded px-3 py-1 inline-block">Urban Potrait</h3>
+    </div>
+  </article>
+</a>
+
+     <a href="projects.html#nature">
+  <article class="bg-zinc-900 bg-opacity-60 rounded-3xl overflow-hidden shadow-xl hover:shadow-red-500/30 transform hover:scale-105 transition duration-500 ease-in-out animate-fadeInUp">
+    <div class="h-64 w-full overflow-hidden rounded-t-3xl">
+      <img src="images/project4.jpeg" alt="Product Photoshoot" class="w-full h-full object-cover" />
+    </div>
+    <div class="p-4 text-center">
+      <h3 class="text-lg font-semibold bg-black bg-opacity-10 rounded px-3 py-1 inline-block">Nature Minimal</h3>
+    </div>
+  </article>
+</a>
+    </div>
+
+    <!-- Instagram Gallery -->
+    <div id="instagram" class="mt-10">
+      <h2 class="text-3xl font-bold text-red-400 text-center mb-4 animate-fadeInUp">~ INSTAGRAM ~</h2>
+      <p class="text-center text-gray-400 italic mb-10 max-w-xl mx-auto animate-fadeInUp">
+        “Photography is the story I fail to put into words.” — <span class="text-white">Destin Sparks</span>
+      </p>
+
+      <div class="overflow-hidden relative animate-fadeInUp">
+        <div class="flex gap-4 w-max animate-scroll" id="instaScroll">
+          <!-- Instagram images will be injected here via JavaScript -->
+          <template id="instaTemplate">
+            <div class="w-[140px] h-[140px] overflow-hidden rounded-xl flex-shrink-0 border border-zinc-700 shadow-md hover:shadow-red-500/40 transition duration-300">
+              <img src="" alt="instagram" class="w-full h-full object-cover" />
+            </div>
+          </template>
+        </div>
+      </div>
+
+      <!-- Instagram Button -->
+      <div class="mt-12 flex justify-center animate-fadeInUp">
+        <a href="https://www.instagram.com/craft._.creator/?__pwa=1" target="_blank"
+           class="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition duration-300">
+          View More on Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Scroll Animation Script -->
+<script>
+  const instaScroll = document.getElementById('instaScroll');
+  const template = document.getElementById('instaTemplate');
+  const images = [
+    "1.jpeg", "2.jpeg", "3.jpeg", "4.jpg",
+    "5.jpg", "6.jpeg", "7.jpeg", "8.jpeg"
+  ];
+
+  for (let i = 0; i < 2; i++) {
+    for (const img of images) {
+      const clone = template.content.cloneNode(true);
+      clone.querySelector('img').src = `images/instagram/${img}`;
+      instaScroll.appendChild(clone);
+    }
+  }
+</script>
+
+<!-- Scroll CSS -->
+<style>
+  @keyframes scrollLoop {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-scroll {
+    animation: scrollLoop 35s linear infinite;
+  }
+
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+</style>
+
+<!-- About Me Section -->
+<section id="about" class="min-h-screen w-full bg-gradient-to-br from-black via-zinc-900 to-black py-24 px-6 text-white flex items-center justify-center">
+  <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Profile Image -->
+    <div class="flex justify-center md:justify-end relative group">
+      <img src="images/profile.png" alt="Anuj Gurav" class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-red-500 shadow-lg transition duration-500 group-hover:scale-105 group-hover:shadow-red-500/40" />
+      <div class="absolute inset-0 rounded-full border-4 border-red-500 opacity-10 group-hover:opacity-40 animate-pulse"></div>
+    </div>
+
+    <!-- About Content -->
+    <div class="text-center md:text-left">
+      <h2 class="text-4xl md:text-5xl font-bold velvet mb-6 tracking-wide">~ ABOUT ME ~</h2>
+
+      <!-- Typewriter Paragraph -->
+      <p class="text-lg md:text-xl text-gray-300 font-mono whitespace-pre-line min-h-[200px] leading-relaxed text-justify">
+        <span id="typewriter-text"></span><span class="text-red-500 animate-pulse">|</span>
+      </p>
+
+      <!-- Skillset Box -->
+      <div class="mt-8 bg-zinc-900 bg-opacity-70 p-6 rounded-xl shadow-md border border-zinc-800 transition duration-300 hover:shadow-red-500/30">
+        <h3 class="text-2xl font-bold text-red-400 mb-3">✨ What Makes Me Unique?</h3>
+        <ul class="list-disc list-inside text-gray-300 space-y-2 text-base">
+          <li>📸 Freelancer since college: Portraits, reels, maternity & products</li>
+          <li>🎓 EXTC student from Shree L.R. Tiwari College of Engineering</li>
+          <li>🎞️ Expert in editing cinematic & travel-based content</li>
+          <li>🤝 Collaborating with brands & creators since 2020</li>
+          <li>📍 Based in Mumbai, shooting globally</li>
+        </ul>
+      </div>
+
+      <p class="mt-6 italic text-gray-400 text-sm">
+        “Let your moments tell stories. I just frame them.”
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="min-h-screen py-24 bg-gradient-to-br from-black via-zinc-900 to-black text-white">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold velvet mb-6 tracking-wide">~ LET’S CONNECT ~</h2>
+    <p class="text-gray-300 mb-12 text-lg max-w-2xl mx-auto leading-relaxed">
+      Have a vision, a story, or a moment waiting to be captured? Let’s make it happen together. Whether you want to collaborate, book a session, or simply say hi — I’m just a message away.
+    </p>
+
+    <!-- Contact Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
+      
+      <!-- Phone -->
+      <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 shadow-xl hover:shadow-red-500/40 transition duration-300">
+        <div class="flex flex-col items-center">
+          <img src="https://img.icons8.com/fluency/96/phone-disconnected.png" alt="Phone" class="w-16 h-16 mb-4" />
+          <h3 class="text-2xl font-bold text-red-400 mb-2">Call / WhatsApp</h3>
+          <p class="text-gray-300 text-sm mb-2">Feel free to ring or drop a message anytime. I’m happy to chat about your ideas or help you plan a shoot.</p>
+          <p class="text-gray-400 font-mono">+91 73854 45206</p>
+          <p class="text-gray-400 font-mono">+91 93214 43452</p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 shadow-xl hover:shadow-red-500/40 transition duration-300">
+        <div class="flex flex-col items-center">
+          <img src="https://img.icons8.com/fluency/96/new-post.png" alt="Email" class="w-16 h-16 mb-4" />
+          <h3 class="text-2xl font-bold text-red-400 mb-2">Email Me</h3>
+          <p class="text-gray-300 text-sm mb-2">Drop your thoughts, concepts, or inquiries — I usually reply within 24 hours.</p>
+          <p class="text-gray-400 font-mono">shevdeyash09@gmail.com</p>
+          <p class="text-gray-400 font-mono">anuj.n.gurav@slrtce.com</p>
+        </div>
+      </div>
+
+      <!-- Location -->
+      <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 shadow-xl hover:shadow-red-500/40 transition duration-300">
+        <div class="flex flex-col items-center">
+          <img src="https://img.icons8.com/fluency/96/marker.png" alt="Location" class="w-16 h-16 mb-4" />
+          <h3 class="text-2xl font-bold text-red-400 mb-2">Studio Base</h3>
+          <p class="text-gray-300 text-sm mb-2">Located in the vibrant lanes of Mumbai, my studio space is where creativity breathes and moments are turned into magic.</p>
+          <p class="text-gray-400 font-mono">Goregaon (W), Mumbai - 400104</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSciePTFN6vLoJDhzUJojj6lXVvlmYfsm8O6Z18SMR2fOiXl7A/viewform?usp=dialog" target="_blank" class="px-8 py-3 bg-red-500 hover:bg-red-600 rounded-full font-semibold shadow-md transition duration-300">
+        I Want to Work With You
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScfCuGUa7JmtgLBliD8rKcEFZmMv7UrDsCcYP1pRV7UvQLDwg/viewform?usp=dialog" target="_blank" class="px-8 py-3 bg-white text-red-600 hover:bg-red-100 rounded-full font-semibold shadow-md transition duration-300">
+        I Want You to Work For Me
+      </a>
+    </div>
+
+    <!-- Bottom Note -->
+    <p class="mt-16 text-gray-500 italic text-sm max-w-xl mx-auto">
+      “If your moment matters, it deserves to be seen with soul.”
+    </p>
+
+  </div>
+</section>
+
+<footer class="bg-black text-gray-400 pt-6 pb-10 border-t border-zinc-800 relative">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <p class="text-sm text-gray-400 max-w-xl mx-auto mb-4">
+      Capturing light, emotion, and timelessness — one frame at a time.
+    </p>
+
+    <!-- Social Media Icons -->
+    <div class="flex justify-center gap-5 mb-4">
+      <a href="https://www.instagram.com/craft._.creator/?__pwa=1" target="_blank" class="transform hover:scale-125 transition duration-300">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" class="w-5 h-5" />
+      </a>
+      <a href="https://www.linkedin.com/in/anuj-gurav-3820a4257/" target="_blank" class="transform hover:scale-125 transition duration-300">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" class="w-5 h-5" />
+      </a>
+      <a href="mailto:shevdeyash9@gmail.com" class="transform hover:scale-125 transition duration-300">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email" class="w-5 h-5" />
+      </a>
+      <a href="tel:+917385445206" class="transform hover:scale-125 transition duration-300">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone" class="w-5 h-5" />
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-xs text-gray-600">
+      &copy; 2025 <span class="text-white">Anuj Gurav</span>. Crafted with ❤️ in Mumbai.
+    </p>
+  </div>
+
+  <!-- Creative Back to Top Button -->
+  <a href="#home" title="Back to Top"
+     class="fixed bottom-6 right-6 group z-50">
+    <div class="relative w-12 h-12 rounded-full bg-black border-2 border-red-500 shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-red-500/40">
+      <!-- Glowing Ring Animation -->
+      <div class="absolute inset-0 rounded-full animate-ping border-2 border-red-500 opacity-30"></div>
+
+      <!-- Up Arrow Icon -->
+      <svg class="w-5 h-5 text-red-500 group-hover:animate-bounce transition duration-300" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 15l7-7 7 7" />
+      </svg>
+    </div>
+  </a>
+</footer>
+
+<style> 
+/* Back to Top Glowing Button Enhancements */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(215, 38, 56, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(215, 38, 56, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(215, 38, 56, 0);
+  }
+}
+</style>
+
+<script>
+  const typewriterText = document.getElementById("typewriter-text");
+  const paragraph = `Hi! I'm Anuj Gurav — an EXTC Engineer turned Visual Artist. 
+  I see life through the lens — literally. From casual college shoots to professional portraits, 
+  I've evolved into a storyteller who doesn't just click pictures, but captures emotions, frames moments, 
+  and creates timeless memories. Let’s craft something unforgettable together.`.replace(/\s+/g, ' ').trim();
+
+  let index = 0;
+
+  function typeWriter() {
+    if (index < paragraph.length) {
+      typewriterText.textContent += paragraph.charAt(index);
+      index++;
+      setTimeout(typeWriter, 40); // Typing speed in ms
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", typeWriter);
+
+  // Smooth scroll for back-to-top
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+</script>
+</body>
+</html>
